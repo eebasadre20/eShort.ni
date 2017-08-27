@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Url code:</strong>
+  <%= @url.url_code %>
+</p>
+
+<p>
+  <strong>Original url:</strong>
+  <%= @url.original_url %>
+</p>
+
+<p>
+  <strong>Generated hash:</strong>
+  <%= @url.generated_hash %>
+</p>
+
+<%= link_to 'Edit', edit_url_path(@url) %> |
+<%= link_to 'Back', urls_path %>
